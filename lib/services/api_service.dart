@@ -12,7 +12,7 @@ class ApiService {
     List<WebtoonModel> webtoonList = [];
     final url = Uri.https(apiUrl, option);
     final getData = await http.get(url);
-    final List<Map<String, dynamic>> getJson = jsonDecode(getData.body);
+    final List<dynamic> getJson = jsonDecode(getData.body);
     for (var json in getJson) {
       webtoonList.add(
         WebtoonModel.createmodel(

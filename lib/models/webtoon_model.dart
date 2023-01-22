@@ -1,9 +1,9 @@
 class WebtoonModel {
-  final title, thumb, id;
+  late final String title, thumb, id;
 
-  WebtoonModel.createmodel(
-      {required String title, required String thumb, required String id})
-      : title = title,
-        thumb = thumb,
-        id = id;
+  WebtoonModel.createmodel({
+    required this.title,
+    required this.thumb,
+    required this.id,
+  });
 }
